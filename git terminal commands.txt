@@ -23,4 +23,4 @@ git commit -a -m "mensaje" -- hace git add y commit al mismo tiempo y evitas el 
 
 git revert COMMIT_HASH  --  hala los archivos como estaban en el commit que seleccionas con el hash del commit y hace un commit nuevo con los archivos restaurados.
 git revert -n COMMIT_HASH   --  hala los archivos como estaban en el commit que seleccionas con el hash del commit. el -n permita que el revert no haga commit de una vez, sino que los deja en stage.
-git restored    --  
+git restored    --  TESTETESTETETS
