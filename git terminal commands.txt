@@ -1,0 +1,13 @@
+pwd     --   Print working Directory: Imprime la ruta del folder donde estamos actualmente.
+ls      --   short listing: muestra todos los folders debajo de la ruta actual
+cd      --   Change Directory: te mueves a la carpeta seleccionada con el nombre que da el comando ls.
+ls - l  --   long listing: Da una vista detallada de TODO lo que hay en la ruta actual con datos de los elementos.
+cd ..   --   te mueves al folder de arriba (parent folder)
+cd ~    --   te mueves al directorio home (/c/Users/abpdyzz)
+clear   --   limpia terminal
+cd /    --   te manda al root Directory.
+
+mkdir   --   Make Directory
+touch   --   crea file si no existe, si existe, modifica
+
+git init--  
