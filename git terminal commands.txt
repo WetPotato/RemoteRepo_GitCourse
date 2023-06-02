@@ -21,3 +21,6 @@ git log    --  da una lista de todos los commits pasados. (si se queda como colg
 git commit -a -- hace add y commit al mismo tiempo (le da add a los archivos que ya estaban antes) y abre una ventana para agregar el comentario. Este comentario se agrega en la rimera línea del editor de texto. se le da save y se cierra.
 git commit -a -m "mensaje" -- hace git add y commit al mismo tiempo y evitas el pop up pidiendo el mensaje.
 
+git revert COMMIT_HASH  --  hala los archivos como estaban en el commit que seleccionas con el hash del commit y hace un commit nuevo con los archivos restaurados.
+git revert -n COMMIT_HASH   --  hala los archivos como estaban en el commit que seleccionas con el hash del commit. el -n permita que el revert no haga commit de una vez, sino que los deja en stage.
+git restored    --  
