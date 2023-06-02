@@ -46,3 +46,6 @@ git branch  --  imprime la lista de branches de la instancia de git.
 
 git cheackout nombre_de_branch  -- activa el branch seleccionado.
 
+git merge   --  permite unir un branch a otro (normalmente al master) (se debe estar en el branch "principal")
+
+
