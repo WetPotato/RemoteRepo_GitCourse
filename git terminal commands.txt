@@ -39,4 +39,10 @@ git reset HEAD~n hecha para atrás n commits desde el último.
 "El reset se usa para cuando quieres hechar para atrás y no quieres que quede la historia en el log. 
     por ejemplo: si haces commit con una contraseña en el archivo y no quieres que eso quede en el log."
 
+"git branch abre un branch donde se puede trabajar con una versión diferente sin modificar la linea principal del log"
+
+git branch nombre_de_branch -- crea el branch desde el commit actual
+git branch  --  imprime la lista de branches de la instancia de git.
+
+git cheackout nombre_de_branch  -- activa el branch seleccionado.
 
