@@ -24,10 +24,3 @@ git commit -a -m "mensaje" -- hace git add y commit al mismo tiempo y evitas el 
 git revert COMMIT_HASH  --  hala los archivos como estaban en el commit que seleccionas con el hash del commit y hace un commit nuevo con los archivos restaurados.
 git revert -n COMMIT_HASH   --  hala los archivos como estaban en el commit que seleccionas con el hash del commit. el -n permita que el revert no haga commit de una vez, sino que los deja en stage.
 git restored    --  TESTETESTETETS
-git reset COMMIT_HASH --hard -- te devuelve al commit que seleciconas y borra los commits que estbaan despues. esto no solo modifica los archivos al estado que tenía en el momento del commit, sino que elimina los achivos que no estaban y devuelve los borrados
-git reset COMMIT_HASH -- te devuelve al commit que seleciconas y borra los commits que estbaan despues
-
-"git revert revierte los cambios que se hicieron y te los deja como el commitseleccionado y crea un nuevo commit con el estado al que quieres regresar"
-"git reset te devuelve al estado que tenian los archivos al moemnto del commit y borra todos los commits que hay a habido después (si lleva el modifier --hard, regresa tambien el estado de los archivos, no solo el git log)"
-
-git revert HEAD recha para atrás el último cambio que se hizo.
