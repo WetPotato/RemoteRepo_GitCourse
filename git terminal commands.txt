@@ -16,6 +16,7 @@ ls -a   --  ls show all (including hidden files)
 git status  -- muestra el estado del repositorio y en que branch estas. tambien muestra los untracked files (sin stage para el commit)
 "El commit es un snapshot de los files que se seleciconen en un punto en el tiempo"
 git add     --  añade un archivo o folder como un archivo con tracking en el repo de git. esto permite que si hay un cambio, git sepa que está pendiente hacer un commit.
+git add .   -- añade todos los archivos del dir actual al stage del git
 git commit -m "mensaje" -- hace commit a todos los archivos que están en el staging area (que se les hizo git add) en el repo. siempre se debe agregar un mensaje (version o lo que sea. Mejor que sea estandarizado).
 git log    --  da una lista de todos los commits pasados. (si se queda como colgado mostrando el log, presionar tecla 'q')
 git commit -a -- hace add y commit al mismo tiempo (le da add a los archivos que ya estaban antes) y abre una ventana para agregar el comentario. Este comentario se agrega en la rimera línea del editor de texto. se le da save y se cierra.
@@ -24,11 +25,11 @@ git commit -a -m "mensaje" -- hace git add y commit al mismo tiempo y evitas el 
 git revert COMMIT_HASH  --  devuelve tus archivos al estado del commit anterior al que estas seleccionando y crea un commit nuevo.
 git revert -n COMMIT_HASH   --  devuelve tus archivos al estado del commit anterior al que estas seleccionando. el modifier -n hace que deje los cambios en staged sin hacer el commit (hay que hacerlo manual)
 
-git reset COMMIT_HASH -- olvida el commit que estás seleccionando y te deja en el commit anterior
-git reset COMMIT_HASH --hard -- olvida el commit que estás seleccionando y te deja en el commit anterior. el modifier --hard hace que los archivos también se devuelvan al estado anterior
+git reset COMMIT_HASH -- olvida los commits que están después del seleccionado.
+git reset COMMIT_HASH --hard -- olvida los commits que están después del seleccionado. el modifier --hard hace que los archivos también se devuelvan al estado anterior
 
 "git revert revierte los cambios que se hicieron en el commit seleciconado y te los deja como el commit anterior"
-"git reset te devuelve al estado que tenías en el commit anterior al seleccionado y borra todos los commits que hay a habido después (si lleva el modifier --hard, regresa tambien el estado de los archivos, no solo el git log)"
+"git reset te devuelve al estado que tenías en el commit seleccionado y borra todos los commits que hay a habido después (si lleva el modifier --hard, regresa tambien el estado de los archivos, no solo el git log)"
 
 git revert HEAD hecha para atrás el último cambio que se hizo.
 git reset HEAD~n hecha para atrás n commits desde el último.
