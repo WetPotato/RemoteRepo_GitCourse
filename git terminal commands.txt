@@ -31,4 +31,11 @@ git reset COMMIT_HASH --hard -- olvida el commit que estás seleccionando y te d
 "git reset te devuelve al estado que tenías en el commit anterior al seleccionado y borra todos los commits que hay a habido después (si lleva el modifier --hard, regresa tambien el estado de los archivos, no solo el git log)"
 
 git revert HEAD hecha para atrás el último cambio que se hizo.
-git reset HEAD~n hecha para atrás n commits desde el último
+git reset HEAD~n hecha para atrás n commits desde el último.
+
+"El revert se usa para cuando puedes hechar para atrás y no importa que quede la historia en el log."
+
+"El reset se usa para cuando quieres hechar para atrás y no quieres que quede la historia en el log. 
+    por ejemplo: si haces commit con una contraseña en el archivo y no quieres que eso quede en el log."
+
+
