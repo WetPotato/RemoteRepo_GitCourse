@@ -18,4 +18,5 @@ git status  -- muestra el estado del repositorio y en que branch estas. tambien 
 git add     --  añade un archivo o folder como un archivo con tracking en el repo de git. esto permite que si hay un cambio, git sepa que está pendiente hacer un commit.
 git commit -m "mensaje" -- hace commit a todos los archivos que están en el staging area (que se les hizo git add) en el repo. siempre se debe agregar un mensaje (version o lo que sea. Mejor que sea estandarizado).
 git log    --  da una lista de todos los commits pasados
+git commit -a -- hace add y commit al mismo tiempo (le da add a los archivos que ya estaban antes) y abre una ventana para agregar el comentario. Este comentario se agrega en la rimera línea del editor de texto. se le da save y se cierra.
 
