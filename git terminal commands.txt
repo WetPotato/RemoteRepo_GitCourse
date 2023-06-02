@@ -1,7 +1,7 @@
 pwd     --   Print working Directory: Imprime la ruta del folder donde estamos actualmente.
-ls      --   short listing: muestra todos los folders debajo de la ruta actual
+ls      --   short listing: muestra todos los folders y archivos debajo de la ruta actual
 cd      --   Change Directory: te mueves a la carpeta seleccionada con el nombre que da el comando ls.
-ls - l  --   long listing: Da una vista detallada de TODO lo que hay en la ruta actual con datos de los elementos.
+ls -l  --    long listing: Da una vista detallada de TODO lo que hay en la ruta actual con datos de los elementos.
 cd ..   --   te mueves al folder de arriba (parent folder)
 cd ~    --   te mueves al directorio home (/c/Users/abpdyzz)
 clear   --   limpia terminal
@@ -10,4 +10,11 @@ cd /    --   te manda al root Directory.
 mkdir   --   Make Directory
 touch   --   crea file si no existe, si existe, modifica
 
-git init--  
+git init--  inicializa un git repositry vacio
+ls -a   --  ls show all (including hidden files)
+
+git status  -- muestra el estado del repositorio y en que branch estas. tambien muestra los untracked files (sin stage para el commit)
+"El commit es un snapshot de los files que se seleciconen en un punto en el tiempo"
+git add     --  añade un archivo o folder como un archivo con tracking en el repo de git. esto permite que si hay un cambio, git sepa que está pendiente hacer un commit.
+git commit -m "mensaje" -- hace commit a todos los archivos trackeados en el repo. siempre se debe agregar un mensaje (version o lo que sea. Mejor que sea estandarizado).
+
