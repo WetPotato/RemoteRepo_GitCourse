@@ -44,7 +44,7 @@ git reset HEAD~n hecha para atrás n commits desde el último.
 git branch nombre_de_branch -- crea el branch desde el commit actual
 git branch  --  imprime la lista de branches de la instancia de git.
 
-git cheackout nombre_de_branch  -- activa el branch seleccionado..
+git checkout nombre_de_branch  -- activa el branch seleccionado..
 
 git merge   --  permite unir un branch a otro (normalmente al master) (se debe estar en el branch "principal")
 
@@ -52,4 +52,4 @@ git merge   --  permite unir un branch a otro (normalmente al master) (se debe e
 
 git branch -d nombre_de_branch  --  Borra un branch completo
 
-gir diff    --  te indica cuales son los cambios que han habido en un file vs su ultimo commit en el branch actual. Par salir, preionar tecla 'q'.
+git diff    --  te indica cuales son los cambios que han habido en un file vs su ultimo commit en el branch actual. Par salir, preionar tecla 'q'.
