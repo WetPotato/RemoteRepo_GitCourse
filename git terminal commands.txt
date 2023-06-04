@@ -68,3 +68,7 @@ git clone url_de_repo_remoto    --  git copia el repo remoto completo a tu pc y 
 git fork (se hace desde github)  crea un clon del remoteRepo EN github (crea otro remote repo). Esto sirve para copiar el remote repo de alguien y usarlo como tu propio remote repo y hacerle cambios sin necesitar el permiso del autor para cambiar el remote repo original.
 
 "SIEMPRE es bueno hacer pull justo antes de hacer push, de esta manera, puedes manejar los conflictos localmente y subir correctamente los cambios unidos. Si no se hace así, manejar los conflictos en el remote repo directamente puede ser mas complicado."
+
+git ignore sirve para que cuando se hace add . se ignoren los files nombrados (con todo y extension) en el .gitignore file. Esto se hace creando un file llamado .gitignore (crear con touch). Suele hacerse despues del git init pero se puede hacer en cualquier momento.
+
+
